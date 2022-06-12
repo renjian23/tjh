@@ -1,0 +1,39 @@
+#include
+
+#include #include
+
+int a,n,nright=0,nwrong=0,flag5,flag3=1,flag6=0,mark,etime=0,etime1,etime2; char op,choice; void award() {
+char c;
+
+if(mark==100) //*输出笑脸等不同奖励*//
+
+{
+c=rand()%2+1;
+
+printf("%28c %21c\n",c,c); c=rand()%2+1;
+
+printf("%26c %3c %17c %3c\n",c,c,c,c); c=rand()%2+1;
+
+printf("%24c %7c %13c %7c\n",c,c,c,c); c=rand()%2+1; printf("\n\n"); printf("\n\n");
+
+printf("%35c %7c\n",c,c); c=rand()%2+1;
+
+printf("%37c %3c\n",c,c); c=rand()%2+1; printf("%39c\n",c); }
+
+else if(mark>=90) {
+c=rand()%2+1;
+
+printf("%28c %21c\n",c,c);
+
+c=rand()%2+1;
+
+printf("%26c %3c %17c %3c\n",c,c,c,c); c=rand()%2+1;
+
+printf("%24c %7c %13c %7c\n",c,c,c,c); c=rand()%2+1; printf("\n\n"); printf("\n\n");
+
+printf("%35c %c %c %c %c\n",c,c,c,c,c); }
+
+else if(mark>=80) {
+c=rand()%2+1; printf("\n");
+
+printf("%28c %c %c %c %c %12c %c %c %c %c\n",c,c,c,c,c,c,c,c,c,c);
